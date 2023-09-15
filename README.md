@@ -1,6 +1,8 @@
 # AierBot
 
-**TODO: Add description**
+A telegram bot to sync messages to https://aier.app
+
+![save memo to AIer.app](./docs/assets/save-memo-to-aier.gif)
 
 ## Build with
 
@@ -9,16 +11,16 @@
 
 ## Usage
 
-```
-
-```
+TODO:
 
 ## Development
 
-```
+```sh
 mix deps.get
 
 export TELEGRAM_BOT_TOKEN=
+export AIER_API_TOKEN=
+
 mix run --no-halt
 ```
 
@@ -30,6 +32,6 @@ GitHub Actions
 
 Secrets:
 
-- `FLY_API_TOKEN`
 - `TELEGRAM_BOT_TOKEN`
 - `AIER_API_TOKEN`
+- `FLY_API_TOKEN`
