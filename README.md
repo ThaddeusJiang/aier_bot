@@ -24,16 +24,12 @@ mix run --no-halt
 
 ## Deployment
 
-```
-fly secrets set TELEGRAM_BOT_TOKEN=
-
-fly deploy --remote-only
-```
-
-## CI/CD
+### CI/CD
 
 GitHub Actions
 
 Secrets:
 
 - `FLY_API_TOKEN`
+- `TELEGRAM_BOT_TOKEN`
+- `AIER_API_TOKEN`

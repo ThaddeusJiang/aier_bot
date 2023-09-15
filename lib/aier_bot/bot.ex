@@ -1,4 +1,5 @@
 defmodule AierBot.Bot do
+  alias AierBot.AierApi
   @bot :aier_bot
 
   use ExGram.Bot,
@@ -21,6 +22,13 @@ defmodule AierBot.Bot do
   end
 
   def handle({:text, text, _msg}, context) do
-    answer(context, "You said: #{text}")
+    case AierApi.create_memo(text) do
+      {:ok, response} -> create_memo_success(response, context)
+      {:error, error} -> answer(context, "Error: #{inspect(error)}")
+    end
+  end
+
+  def create_memo_success(_, context) do
+    answer(context, "Memo saved!")
   end
 end
