@@ -20,6 +20,7 @@ mix deps.get
 
 export TELEGRAM_BOT_TOKEN=
 export AIER_API_TOKEN=
+export OPENAI_API_KEY=
 
 mix run --no-halt
 ```

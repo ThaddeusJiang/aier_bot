@@ -24,6 +24,7 @@ defmodule AierBot.MixProject do
     [
       {:ex_gram, "~> 0.40.0"},
       {:tesla, "~> 1.7.0"},
+      {:openai_ex, "~> 0.3.0"},
       {:hackney, "~> 1.18.2"},
       {:jason, ">= 1.4.1"}
     ]
